@@ -5,41 +5,57 @@ console.log('***** Function Practice *****')
 // to test it and display the result
 
 // 1. Function to return 'Hello World!'
-function hello() {
+function HelloWorld() {
   return 'Hello World!';
 }
 // Call the function to test
-console.log('Test - should say "Hello World!"', hello());
+console.log('Hello World!',);
+
 
 
 // 2. Function to return an personalized hello, using the `name` argument.
 //    for example 'Hello, Jo!', or 'Hello, Stacy!'
-function helloName( name ) {
-  return;
+function hello( name ) {
+  console.log('Hello' + ' '+ name );
+
 }
+hello ( 'Sean!' );
+
+
+
 // Remember to call the function to test
 
 
 // 3. Function to add two numbers together & return the result
-function addNumbers( firstNumber ) {
-  // return firstNumber + secondNumber;
+function addNumbers(a , b) {
+return sum(a+b);
 }
+let a = 3;
+let b = 14;
 
+console.log('addNumbers', a+b);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree( ){
-
+function multiplyThree(d, f, g){
+return sum(d*f*g);
 }
-
+let d = 5;
+let f= 6;
+let g = 2;
+console.log('mulitply', d*f*g);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
-function isPositive( number ) {
+function isPositive ( number ) {
   if ( number > 0 ){
-    return;
+    return true;
   }
-    return;
+  else {
+    return false;
+  }
 }
+
+
 // Call the function to test each outcome (true & false) 
 // Write a separate console.log statement for each outcome
 console.log( 'isPositive - should say true', isPositive(3) );
@@ -49,16 +65,28 @@ console.log( 'isPositive - should say false', isPositive(-3) );
 
 // 6. Function to return the _last_ item in an array. If the 
 //    array is empty, return `undefined`.
-function getLast( array ) {
+let fruit = ['apple','banana','orange','pear'];
+fruit[fruit.length-1];
+console.log('last Item is array:' , fruit.length-1);
 
-}
+  
 
 // 7. Function to find a value in an array. Return true if the 
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
-function find( value, array ){
-  
+function find( value, array ) {
+  for (let i=0; i > array.length; i++){
+    const topValue = array [i];
+  }
 }
+console.log (' Top Value:' , topValue);
+
+if (topValue === value ) {
+  return true;
+}
+return false
+
+
 
 // ----------------------
 // Stretch Goals
